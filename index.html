@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Gloc Villa | Casas de charme e arte em Águas da Prata</title>
+<meta name="description" content="Cinco casas temáticas com coleções de arte, numa chácara de 7.000 m² na Serra da Mantiqueira, em Águas da Prata, SP. Piscina, sauna, mirante e café da manhã incluso.">
+<meta name="theme-color" content="#F5F0E8">
+<meta property="og:title" content="Gloc Villa, casas de charme e arte">
+<meta property="og:description" content="Toscana, Bali, Marrocos, África e Shanghai: cinco casas na Serra da Mantiqueira. Descubra qual combina com a sua viagem.">
+<meta property="og:image" content="hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20fill%3D'%23F5F0E8'%2F%3E%3Ccircle%20cx%3D'32'%20cy%3D'32'%20r%3D'16'%20fill%3D'none'%20stroke%3D'%238A1A1C'%20stroke-width%3D'6'%20stroke-dasharray%3D'75%2025'%2F%3E%3C%2Fsvg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="hero.jpg"><style>
+:root{
+ color-scheme:light only;
+ --papel:#F5F0E8;--papel2:#E9E0D1;--tinta:#1C1A19;--suave:#58524C;--salvia:#8A1A1C;--tomate:#8A1A1C;
+ --linha:rgba(28,26,25,.14);--linha2:rgba(28,26,25,.07);
+ --serif:'Newsreader',Georgia,serif;--sans:'Inter',system-ui,-apple-system,sans-serif;
+ --s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:64px;--s6:104px;--r:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--papel);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{font:400 17px/1.65 var(--sans);color:var(--tinta);background:linear-gradient(180deg,#F8F4EE 0%,var(--papel) 30%,var(--papel2) 100%);min-height:100vh}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--tomate);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.rot{font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--salvia)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;color:var(--tinta)}
+h1{font-size:clamp(38px,5.6vw,58px);line-height:1.04}
+h2{font-size:clamp(28px,3.6vw,38px);line-height:1.12}
+h3{font-size:22px;line-height:1.25}
+p{max-width:62ch}
+.mute{color:var(--suave)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);background:var(--tinta);color:var(--papel);font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid var(--tinta);cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:#000}
+.btn.ghost{background:transparent;color:var(--tinta)}
+.btn.ghost:hover{background:var(--tinta);color:var(--papel)}
+.btn.tom{background:var(--tomate);border-color:var(--tomate);color:#fff}
+.btn.tom:hover{background:#6E1316;border-color:#6E1316}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* topo */
+header{border-bottom:1px solid var(--linha);background:rgba(247,245,239,.96);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:var(--s2)}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.rf{width:38px;height:38px;background:var(--tomate);color:var(--papel);display:grid;place-items:center;font:500 17px/1 var(--serif);letter-spacing:.03em}
+.marca b{display:block;font:500 19px/1.1 var(--serif)}
+.marca small{display:block;font-size:12.5px;color:var(--suave)}
+.links{display:flex;align-items:center;gap:28px}
+.links a{font-size:15px;color:var(--suave);text-decoration:none}
+.links a:hover{color:var(--tinta)}
+.links .btn{min-height:42px;padding:0 18px;font-size:15px;color:var(--papel);white-space:nowrap}.links .sm{display:none}
+
+/* hero */
+.hero{padding:var(--s5) 0 var(--s4)}
+.hero .wrap{display:grid;grid-template-columns:7fr 5fr;gap:var(--s5);align-items:end}
+.hero .txt{padding-bottom:var(--s3)}
+.hero h1{margin:var(--s2) 0 var(--s3)}
+.hero h1 em{font-style:normal;color:var(--salvia)}
+.hero .lead{font-size:19px;color:var(--suave);margin-bottom:var(--s4)}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.foto{position:relative;margin-bottom:var(--s4)}
+.foto img{width:100%;height:auto;border-radius:var(--r);background:#DDD6C8}
+.ficha{position:absolute;left:-48px;bottom:-32px;background:var(--papel);border:1px solid var(--linha);border-radius:var(--r);padding:18px 20px;width:min(270px,82%);box-shadow:0 18px 40px -24px rgba(28,26,25,.45)}
+.ficha dl{display:grid;gap:10px}
+.ficha dt{font:600 11px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--salvia)}
+.ficha dd{font-size:14.5px;line-height:1.4;margin-top:2px}
+
+/* régua da fome */
+.regua{border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:var(--s3) 0;margin-top:var(--s4)}
+.regua .wrap{display:grid;grid-template-columns:4fr 8fr;gap:var(--s4);align-items:center}
+.regua p{font:400 20px/1.35 var(--serif);max-width:none}
+.escala{display:grid;grid-template-columns:repeat(11,1fr);gap:4px}
+.escala span{position:relative;text-align:center;font:500 13px/1 var(--sans);color:var(--suave);padding-top:22px}
+.escala span:before{content:"";position:absolute;left:50%;top:0;width:1px;height:14px;background:var(--tinta);opacity:.45}
+.escala span.m:before{height:18px;opacity:1;width:2px;background:var(--tomate)}
+.escala span.m{color:var(--tomate);font-weight:600}
+.escala-leg{display:flex;justify-content:space-between;font-size:12.5px;color:var(--suave);margin-top:8px}
+
+section{padding:var(--s6) 0}
+.cab{display:grid;grid-template-columns:4fr 8fr;gap:var(--s4);margin-bottom:var(--s5)}
+.cab h2{margin-top:10px}
+
+/* para quem */
+.quem ol{list-style:none;counter-reset:q;border-top:1px solid var(--linha)}
+.quem li{counter-increment:q;display:grid;grid-template-columns:4fr 8fr;gap:var(--s4);padding:var(--s3) 0;border-bottom:1px solid var(--linha);align-items:center}.quem li>div{display:grid;grid-template-columns:5fr 7fr;gap:var(--s4)}.qf{width:100%;height:auto;border-radius:var(--r);background:var(--papel2)}.modo .mf{width:100%;height:auto;border-radius:var(--r);margin-bottom:var(--s3);background:var(--papel2)}
+.quem li h3:before{content:counter(q,decimal-leading-zero);display:block;font:500 13px/1 var(--sans);color:var(--tomate);margin-bottom:10px;letter-spacing:.06em}
+.quem li p{color:var(--suave)}
+
+/* método */
+.metodo{background:linear-gradient(165deg,#2E2926,#1C1A19 55%,#141211);color:#EEF0EA}
+.metodo h2,.metodo h3{color:var(--papel)}
+.metodo .rot{color:#E3B7A6}
+.metodo .cab p{color:#CFCBC1}
+.passos{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(244,241,234,.22)}
+.passo{padding:var(--s3) var(--s3) var(--s3) 0;border-right:1px solid rgba(244,241,234,.14)}
+.passo+.passo{padding-left:var(--s3)}
+.passo:last-child{border-right:0}
+.passo .n{font:500 40px/1 var(--serif);color:#E3B7A6;display:block;margin-bottom:var(--s2)}
+.passo p{color:#D6D2C8;font-size:15.5px;margin-top:10px}
+
+/* quiz */
+.quiz .wrap{display:grid;grid-template-columns:4fr 8fr;gap:var(--s5);align-items:start}
+.quiz .lado p{color:var(--suave);margin-top:var(--s2)}
+.cartao{background:#FBFAF6;border:1px solid var(--linha);border-radius:var(--r);padding:var(--s4);background-image:repeating-linear-gradient(180deg,transparent 0,transparent 35px,var(--linha2) 35px,var(--linha2) 36px)}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:var(--s3)}
+.prog .barra{flex:1;height:2px;background:var(--linha);position:relative}
+.prog .barra i{position:absolute;left:0;top:-1px;height:4px;background:var(--tomate);transition:width .25s}
+.prog small{font:600 12px/1 var(--sans);letter-spacing:.12em;color:var(--suave);white-space:nowrap}
+fieldset{border:0}
+legend{font:500 26px/1.2 var(--serif);margin-bottom:6px;padding:0}
+.dica{color:var(--suave);font-size:15px;margin-bottom:var(--s3)}
+.ops{display:grid;gap:10px}
+.op{position:relative}
+.op input{position:absolute;opacity:0;width:1px;height:1px}
+.op label{display:flex;align-items:center;gap:14px;min-height:54px;padding:12px 16px;background:var(--papel);border:1.5px solid var(--linha);border-radius:var(--r);cursor:pointer;font-size:16px;line-height:1.35}
+.op label:before{content:"";flex:none;width:18px;height:18px;border:1.5px solid var(--tinta);border-radius:50%;background:#fff}
+.op input[type=checkbox]+label:before{border-radius:3px}
+.op input:checked+label{border-color:var(--tinta);background:#fff}
+.op input:checked+label:before{background:var(--tinta);box-shadow:inset 0 0 0 3px #fff}
+.op input:focus-visible+label{outline:2px solid var(--tomate);outline-offset:2px}
+.fome{display:grid;grid-template-columns:repeat(11,1fr);gap:6px}
+.fome input{position:absolute;opacity:0;width:1px;height:1px}
+.fome label{display:grid;place-items:center;height:52px;border:1.5px solid var(--linha);border-radius:var(--r);background:var(--papel);font:600 16px/1 var(--sans);cursor:pointer}
+.fome input:checked+label{background:var(--tomate);border-color:var(--tomate);color:#fff}
+.fome input:focus-visible+label{outline:2px solid var(--tinta);outline-offset:2px}
+.fome-leg{display:flex;justify-content:space-between;font-size:13px;color:var(--suave);margin-top:10px}
+.campo{width:100%;min-height:54px;padding:12px 16px;border:1.5px solid var(--linha);border-radius:var(--r);background:#fff;font:400 17px var(--sans);color:var(--tinta)}
+.campo:focus{border-color:var(--tinta);outline:none}
+.nav-q{display:flex;justify-content:space-between;gap:12px;margin-top:var(--s4)}
+.nav-q .btn[disabled]{opacity:.35;cursor:not-allowed}
+.erro{color:var(--tomate);font-size:14.5px;margin-top:12px;min-height:1.2em}
+.res h3{font-size:28px;margin:6px 0 var(--s2)}
+.res .plano{border-left:2px solid var(--tomate);padding-left:var(--s2);margin:var(--s3) 0;display:grid;gap:12px}
+.res .plano p{font-size:16.5px}
+.res .resumo{font-size:14.5px;color:var(--suave);margin-bottom:var(--s3)}
+.res .acts{margin-top:var(--s2)}
+[hidden]{display:none!important}
+
+/* atendimento */
+.modos{display:grid;grid-template-columns:7fr 5fr;gap:var(--s4)}
+.modo{border-top:2px solid var(--tinta);padding-top:var(--s3)}
+.modo h3{margin-bottom:var(--s2)}
+.modo ul{list-style:none;display:grid;gap:10px;margin-top:var(--s2)}
+.modo li{padding-left:22px;position:relative;color:var(--suave)}
+.modo li:before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1.5px;background:var(--tomate)}
+
+/* sobre */
+.sobre .wrap{display:grid;grid-template-columns:5fr 7fr;gap:var(--s5);align-items:start}
+.sobre .ret{width:100%;height:auto;border-radius:var(--r);margin-bottom:var(--s4);background:var(--papel2)}.logo-faixa{background:#8E8F7D;padding:var(--s3) 0}.logo-faixa img{width:min(420px,86%);height:auto;margin:0 auto}.sobre blockquote{font:400 clamp(24px,2.8vw,32px)/1.3 var(--serif);border-left:2px solid var(--tomate);padding-left:var(--s3)}
+.sobre blockquote cite{display:block;font:500 14px/1.4 var(--sans);font-style:normal;color:var(--suave);margin-top:var(--s2)}
+.sobre p{color:var(--suave);margin-bottom:var(--s2)}
+
+.fim{padding:var(--s5) 0 var(--s6)}
+.fim .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--s4);border-top:1px solid var(--linha);padding-top:var(--s5)}
+footer{border-top:1px solid var(--linha);padding:var(--s3) 0 96px;font-size:14px;color:var(--suave)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--tinta)}
+.wa-fixo{position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:#1FAF5A;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}
+.wa-fixo svg{width:28px;height:28px}
+
+@media (max-width:960px){
+ .links a:not(.btn){display:none}
+ .hero .wrap,.cab,.quem li,.quiz .wrap,.modos,.sobre .wrap,.regua .wrap{grid-template-columns:1fr}
+ .hero .wrap{gap:var(--s4)}
+ .hero .txt{padding-bottom:0}
+ .foto{max-width:420px;margin-left:auto;margin-bottom:var(--s5)}
+ .ficha{left:-16px}
+ .passos{grid-template-columns:1fr 1fr}
+ .passo{padding:var(--s3) var(--s2) var(--s3) 0}
+ .passo:nth-child(2){border-right:0}
+ .passo:nth-child(3){padding-left:0;border-top:1px solid rgba(244,241,234,.14)}
+ .passo:nth-child(4){border-top:1px solid rgba(244,241,234,.14)}
+ .cab{gap:var(--s2);margin-bottom:var(--s4)}
+ .quem li{gap:var(--s2)}.quem li>div{grid-template-columns:1fr;gap:8px}
+ section{padding:var(--s5) 0}
+ .fim .wrap{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:560px){
+ .marca small{display:none}.links .lg{display:none}.links .sm{display:inline}
+ .hero{padding-top:var(--s4)}
+ .hero .lead{font-size:17.5px}
+ .acts .btn{width:100%}
+ .foto{margin-left:24px}
+ .passos{grid-template-columns:1fr}
+ .passo,.passo+.passo{padding:var(--s3) 0;border-right:0;border-top:1px solid rgba(244,241,234,.14)}
+ .passo:first-child{border-top:0}
+ .cartao{padding:var(--s3) 18px}
+ legend{font-size:23px}
+ .fome{grid-template-columns:repeat(6,1fr)}
+ .escala span{font-size:12px}
+ .nav-q .btn{flex:1;padding:0 12px}
+}
+.logo{height:34px;width:auto}
+.numeros{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s2)}
+.numeros dt{font:500 26px/1.1 var(--serif);color:var(--tinta)}
+.numeros dd{font-size:13.5px;color:var(--suave);margin-top:4px}
+.quem h3 small{display:block;font:600 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--suave);margin-top:6px}
+.nota{color:var(--suave);font-size:15px;margin-top:var(--s3)}
+.aerea{width:100%;height:auto;border-radius:var(--r);margin-bottom:var(--s4)}
+.pac{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linha)}
+.pac>div{padding:var(--s3) var(--s3) var(--s3) 0;border-bottom:1px solid var(--linha)}
+.pac h3{margin-bottom:8px}
+.rimg{width:100%;height:auto;border-radius:var(--r);margin:var(--s2) 0 0}
+.fome.n6{grid-template-columns:repeat(6,1fr)}
+@media (max-width:960px){.regua .wrap{gap:var(--s3)}.numeros{grid-template-columns:1fr 1fr}.pac{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.logo{height:28px}.pac{grid-template-columns:1fr}.pac>div{padding-right:0}.fome.n6{grid-template-columns:repeat(6,1fr)}}</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="marca" href="#inicio" aria-label="Gloc Villa, início"><img src="logo.png" width="900" height="269" alt="Gloc Villa, casas de charme e arte" class="logo"></a>
+  <nav class="links" aria-label="Seções">
+   <a href="#casas">As casas</a>
+   <a href="#propriedade">A propriedade</a>
+   <a href="#pacotes">Pacotes</a>
+   <a class="btn" href="#questionario"><span class="lg">Qual casa é a sua?</span><span class="sm">Reservar</span></a>
+  </nav>
+ </div>
+</header>
+
+<main id="inicio">
+<section class="hero" style="padding-bottom:0">
+ <div class="wrap">
+  <div class="txt">
+   <span class="rot">Águas da Prata, Serra da Mantiqueira</span>
+   <h1>Cinco casas, cada uma com <em>um lugar do mundo dentro</em>.</h1>
+   <p class="lead">Toscana, Bali, Marrocos, África e Shanghai, montadas com móveis, obras e objetos que os anfitriões reuniram em décadas de viagem. Tudo numa chácara particular de sete mil metros quadrados, com piscina, sauna e mirante para a serra.</p>
+   <div class="acts">
+    <a class="btn tom" href="#questionario">Descobrir a minha casa</a>
+    <a class="btn ghost wa" href="#">Falar no WhatsApp</a>
+   </div>
+  </div>
+  <div class="foto">
+   <img src="hero.jpg" width="900" height="1125" alt="Piscina da Gloc Villa com quiosque e vista para as montanhas da Serra da Mantiqueira" fetchpriority="high">
+  </div>
+ </div>
+ <div class="regua">
+  <div class="wrap">
+   <p>Não somos hotel nem pousada. São casas independentes, com privacidade, numa rua sem saída no alto do bairro.</p>
+   <dl class="numeros">
+    <div><dt>7.000 m²</dt><dd>de chácara particular</dd></div>
+    <div><dt>870 m</dt><dd>de altitude</dd></div>
+    <div><dt>5 casas</dt><dd>de 2 a 6 hóspedes</dd></div>
+    <div><dt>Café</dt><dd>cesta completa no check-in</dd></div>
+   </dl>
+  </div>
+ </div>
+</section>
+
+<section class="quem" id="casas">
+ <div class="wrap">
+  <div class="cab">
+   <span class="rot">As casas</span>
+   <h2>Cada casa tem sua própria coleção de arte</h2>
+  </div>
+  <ol>
+   <li><img class="qf" src="casa-toscana.jpg" width="900" height="600" alt="Quarto da Casa Toscana com cama de casal, quadros e piso de madeira" loading="lazy" decoding="async"><div><h3>Casa Toscana<small>Até 5 hóspedes</small></h3><p>Inspirada nos vilarejos italianos: cores quentes, materiais naturais e peças com marcas do tempo. Tem lareira e mezanino, e é a escolha certa para famílias pequenas ou dois casais.</p></div></li>
+   <li><img class="qf" src="casa-bali.jpg" width="900" height="600" alt="Quarto da Casa Bali com cama vinho, dossel e lanternas" loading="lazy" decoding="async"><div><h3>Casa Bali<small>Até 4 hóspedes</small></h3><p>Leve e orgânica, pensada em torno da ideia balinesa de ritual como cuidado. Dossel sobre a cama, trabalho manual em cada detalhe e um silêncio que ajuda a dormir fundo.</p></div></li>
+   <li><img class="qf" src="casa-marrocos.jpg" width="900" height="600" alt="Quarto da Casa Marrocos com estante de livros e arco decorado" loading="lazy" decoding="async"><div><h3>Casa Marrocos<small>Até 2 hóspedes</small></h3><p>A menor e mais íntima. Padrões geométricos, cores intensas e o jogo de luz e sombra dos pátios marroquinos. Feita para casal.</p></div></li>
+   <li><img class="qf" src="casa-africa.jpg" width="900" height="600" alt="Quarto da Casa África com obras de arte e tecidos estampados" loading="lazy" decoding="async"><div><h3>Casa África<small>Até 5 hóspedes</small></h3><p>Matéria, textura e obras que falam de identidade e pertencimento. Uma casa intensa e acolhedora, com espaço para família ou amigos.</p></div></li>
+   <li><img class="qf" src="casa-shanghai.jpg" width="900" height="600" alt="Quarto da Casa Shanghai com roupa de cama azul e quadros" loading="lazy" decoding="async"><div><h3>Casa Shanghai<small>Até 6 hóspedes</small></h3><p>Linhas limpas e contrastes sutis, entre a cidade contemporânea e as tradições orientais. A maior das cinco, boa para grupos que querem calma.</p></div></li>
+  </ol>
+  <p class="nota">Parte do acervo das casas está à venda. Cada casa tem um guia de visitação que conta a origem das peças.</p>
+ </div>
+</section>
+
+<section class="metodo" id="propriedade">
+ <div class="wrap">
+  <div class="cab">
+   <span class="rot">A propriedade</span>
+   <div>
+    <h2>O que é de todos os hóspedes</h2>
+    <p style="margin-top:14px">Além da sua casa, você usa as áreas comuns da chácara. Algumas são compartilhadas com outros hóspedes e, às vezes, com os anfitriões.</p>
+   </div>
+  </div>
+  <img class="aerea" src="aerea.jpg" width="1400" height="788" alt="Vista aérea da Gloc Villa com as casas, a piscina e os jardins" loading="lazy" decoding="async">
+  <div class="passos">
+   <div class="passo"><span class="n">01</span><h3>Água</h3><p>Piscina com cascata, jacuzzi, sauna úmida e duchas circular e escocesa.</p></div>
+   <div class="passo"><span class="n">02</span><h3>Mirante</h3><p>Vista aberta para a Serra da Mantiqueira e para Águas da Prata, o lugar preferido para o fim de tarde.</p></div>
+   <div class="passo"><span class="n">03</span><h3>Jardins e pomares</h3><p>Bosque com redes, bangalô e caramanchão. Fruta madura no pé pode ser colhida.</p></div>
+   <div class="passo"><span class="n">04</span><h3>Fogo e mesa</h3><p>Lareiras externas ao estilo pampeano, cozinha gourmet com churrasqueira e mini academia.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="quiz" id="questionario">
+ <div class="wrap">
+  <div class="lado">
+   <span class="rot">Antes de reservar</span>
+   <h2 style="margin-top:10px">Qual casa combina com a sua viagem?</h2>
+   <p>Responda seis perguntas e veja a casa e o pacote que mais combinam com você. No final, as respostas vão para o WhatsApp da Gloc Villa já escritas.</p>
+   <p>A reserva só é confirmada depois da conversa com os anfitriões. Nada é enviado até você tocar no botão.</p>
+  </div>
+
+  <div class="cartao">
+   <form id="qz" novalidate>
+    <div class="prog" aria-hidden="true"><div class="barra"><i id="pbar" style="width:16.6%"></i></div><small id="ptxt">1 DE 6</small></div>
+
+    <fieldset class="pg" data-k="pessoas">
+     <legend>Quantas pessoas vão?</legend>
+     <p class="dica">Contando todo mundo.</p>
+     <div class="fome n6">
+      <span><input type="radio" name="pessoas" id="h1" value="1"><label for="h1">1</label></span><span><input type="radio" name="pessoas" id="h2" value="2"><label for="h2">2</label></span><span><input type="radio" name="pessoas" id="h3" value="3"><label for="h3">3</label></span><span><input type="radio" name="pessoas" id="h4" value="4"><label for="h4">4</label></span><span><input type="radio" name="pessoas" id="h5" value="5"><label for="h5">5</label></span><span><input type="radio" name="pessoas" id="h6" value="6"><label for="h6">6</label></span>
+     </div>
+    </fieldset>
+
+    <fieldset class="pg" data-k="ocasiao" hidden>
+     <legend>Qual é a ocasião?</legend>
+     <p class="dica">Escolha a principal.</p>
+     <div class="ops">
+      <div class="op"><input type="radio" name="ocasiao" id="o1" value="Viagem a dois"><label for="o1">Viagem a dois</label></div>
+      <div class="op"><input type="radio" name="ocasiao" id="o2" value="Família"><label for="o2">Família</label></div>
+      <div class="op"><input type="radio" name="ocasiao" id="o3" value="Amigos"><label for="o3">Amigos</label></div>
+      <div class="op"><input type="radio" name="ocasiao" id="o4" value="Descanso sozinho ou trabalho remoto"><label for="o4">Descanso sozinho ou trabalho remoto</label></div>
+     </div>
+    </fieldset>
+
+    <fieldset class="pg" data-k="quando" hidden>
+     <legend>Quando você quer ir?</legend>
+     <p class="dica">Os pacotes têm dias fixos de check-in.</p>
+     <div class="ops">
+      <div class="op"><input type="radio" name="quando" id="w1" value="Fim de semana"><label for="w1">Fim de semana, de sexta a domingo</label></div>
+      <div class="op"><input type="radio" name="quando" id="w2" value="Meio de semana"><label for="w2">Meio de semana, de domingo a quarta</label></div>
+      <div class="op"><input type="radio" name="quando" id="w3" value="Uma semana ou mais"><label for="w3">Uma semana ou mais</label></div>
+      <div class="op"><input type="radio" name="quando" id="w4" value="Natal"><label for="w4">Natal, de 23 a 27 de dezembro</label></div>
+      <div class="op"><input type="radio" name="quando" id="w5" value="Réveillon"><label for="w5">Réveillon, de 30/12 a 4/1</label></div>
+     </div>
+    </fieldset>
+
+    <fieldset class="pg" data-k="clima" hidden>
+     <legend>Qual atmosfera mais te atrai?</legend>
+     <p class="dica">Vá pela primeira impressão.</p>
+     <div class="ops">
+      <div class="op"><input type="radio" name="clima" id="c1" value="Toscana"><label for="c1">Madeira, lareira e cores quentes</label></div>
+      <div class="op"><input type="radio" name="clima" id="c2" value="Bali"><label for="c2">Leve, natural e silenciosa</label></div>
+      <div class="op"><input type="radio" name="clima" id="c3" value="Marrocos"><label for="c3">Cores intensas e padrões geométricos</label></div>
+      <div class="op"><input type="radio" name="clima" id="c4" value="África"><label for="c4">Texturas, matéria e arte com história</label></div>
+      <div class="op"><input type="radio" name="clima" id="c5" value="Shanghai"><label for="c5">Limpa, contemporânea e minimalista</label></div>
+     </div>
+    </fieldset>
+
+    <fieldset class="pg" data-k="gosto" hidden>
+     <legend>O que não pode faltar?</legend>
+     <p class="dica">Pode marcar mais de uma.</p>
+     <div class="ops">
+      <div class="op"><input type="checkbox" name="gosto" id="g1" value="Piscina, jacuzzi e sauna"><label for="g1">Piscina, jacuzzi e sauna</label></div>
+      <div class="op"><input type="checkbox" name="gosto" id="g2" value="Mirante e silêncio"><label for="g2">Mirante e silêncio</label></div>
+      <div class="op"><input type="checkbox" name="gosto" id="g3" value="Churrasco e lareira"><label for="g3">Churrasco e lareira à noite</label></div>
+      <div class="op"><input type="checkbox" name="gosto" id="g4" value="Passeios na região"><label for="g4">Passeios: cafés, vinhos e trilhas</label></div>
+      <div class="op"><input type="checkbox" name="gosto" id="g5" value="Arte e ateliê"><label for="g5">Arte, galerias e o ateliê</label></div>
+     </div>
+    </fieldset>
+
+    <fieldset class="pg" data-k="nome" hidden>
+     <legend>Como podemos te chamar?</legend>
+     <p class="dica">Só o primeiro nome já basta.</p>
+     <label for="nome" class="dica" style="display:block;margin-bottom:8px">Seu nome</label>
+     <input class="campo" id="nome" name="nome" autocomplete="given-name" maxlength="40">
+    </fieldset>
+
+    <div class="res pg" id="res" hidden tabindex="-1">
+     <span class="rot">A casa para a sua viagem</span>
+     <h3 id="rtit"></h3>
+     <img id="rimg" class="rimg" src="casa-toscana.jpg" width="900" height="600" alt="">
+     <div class="plano" id="rplano"></div>
+     <p class="resumo" id="rresumo"></p>
+     <div class="acts">
+      <a class="btn tom" id="enviar" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>Consultar datas no WhatsApp</a>
+      <button class="btn ghost" type="button" id="refazer">Refazer</button>
+     </div>
+    </div>
+
+    <p class="erro" id="erro" role="alert"></p>
+    <div class="nav-q" id="navq">
+     <button class="btn ghost" type="button" id="voltar" disabled>Voltar</button>
+     <button class="btn" type="button" id="seguir">Continuar</button>
+    </div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section id="pacotes">
+ <div class="wrap">
+  <div class="cab">
+   <span class="rot">Pacotes</span>
+   <h2>Dias fixos, preço por casa e não por pessoa</h2>
+  </div>
+  <div class="pac">
+   <div><h3>Final de semana</h3><p class="mute">Sexta a domingo, 2 noites. Check-in sempre na sexta.</p></div>
+   <div><h3>Domingo e quarta grátis</h3><p class="mute">Domingo a quarta, 3 noites, com condição especial no meio da semana.</p></div>
+   <div><h3>Semana</h3><p class="mute">Sexta a quinta, 6 noites.</p></div>
+   <div><h3>10 dias</h3><p class="mute">Sexta ao domingo da semana seguinte, 9 noites.</p></div>
+   <div><h3>Natal na serra</h3><p class="mute">23 a 27 de dezembro. Decoração natalina na casa, cesta com panetone artesanal e espumante, e uma reprodução de obra do Instituto Gloc de lembrança.</p></div>
+   <div><h3>Réveillon na serra</h3><p class="mute">30 de dezembro a 4 de janeiro, 5 noites.</p></div>
+  </div>
+  <p class="nota">Todos os pacotes incluem a cesta de café da manhã no check-in. O valor muda conforme a casa e o número de hóspedes, e as datas estão sujeitas à disponibilidade.</p>
+ </div>
+</section>
+
+<section class="sobre">
+ <div class="wrap">
+  <div>
+   <img class="ret" src="caramanchao.jpg" width="800" height="1000" alt="Caramanchão com cortinas e vista para a serra" loading="lazy" decoding="async">
+  </div>
+  <div>
+   <span class="rot">Arte e região</span>
+   <h2 style="margin:10px 0 18px">Mais que hospedagem</h2>
+   <p>Na mesma chácara funcionam o <strong>Instituto Gloc</strong>, dedicado à arte contemporânea e principalmente à fotografia, e a <strong>Casa Ateliê</strong>, espaço de criação de um dos anfitriões. Os murais e galerias ao ar livre recebem exposições que mudam de tempos em tempos, e o ateliê pode ser visitado com agendamento.</p>
+   <p>Águas da Prata é uma estância hidromineral pequena, na encosta da Mantiqueira e na divisa com Minas Gerais. Dá para provar cafés especiais nas fazendas da serra, conhecer vinícolas, fazer trilhas, andar pelo calçadão das fontes ou simplesmente não sair da Gloc.</p>
+   <p>Check-in a partir das 8h e checkout até as 15h, para o dia de chegada e o de partida renderem de verdade.</p>
+  </div>
+ </div>
+</section>
+
+<section class="fim">
+ <div class="wrap">
+  <h2 style="max-width:18ch">Vamos ver as datas para você?</h2>
+  <div class="acts">
+   <a class="btn tom" href="#questionario">Descobrir a minha casa</a>
+   <a class="btn ghost wa" href="#">Falar no WhatsApp</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap"><span>Gloc Villa · Rua Antônio Ortolan, 227, Jardim Nova Prata, Águas da Prata, SP</span><a href="https://www.instagram.com/glocvilla/" target="_blank" rel="noopener">@glocvilla</a></div>
+</footer>
+
+<a class="wa-fixo wa" href="#" aria-label="Falar com a Gloc Villa no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg></a>
+
+<script>
+(function(){
+var WA='5519992364773';
+function wa(t){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t)}
+document.querySelectorAll('a.wa').forEach(function(a){a.href=wa('Olá! Vim pelo site e gostaria de informações sobre hospedagem na Gloc Villa.');a.target='_blank';a.rel='noopener'});
+
+var CASAS={
+ 'Toscana':{cap:5,img:'casa-toscana.jpg',txt:'Madeira, lareira, mezanino e cores quentes. Uma casa para chegar, acender o fogo e ficar.'},
+ 'Bali':{cap:4,img:'casa-bali.jpg',txt:'Leve e silenciosa, com dossel sobre a cama e materiais naturais. Ideal para descansar de verdade.'},
+ 'Marrocos':{cap:2,img:'casa-marrocos.jpg',txt:'A mais íntima das cinco, com cores intensas, padrões geométricos e estante cheia de livros.'},
+ 'África':{cap:5,img:'casa-africa.jpg',txt:'Texturas, tecidos e obras com história. Espaço de sobra para família ou amigos.'},
+ 'Shanghai':{cap:6,img:'casa-shanghai.jpg',txt:'Contemporânea e serena, de linhas limpas. A maior das cinco, recebe até seis pessoas.'}
+};
+var f=document.getElementById('qz'),pgs=[].slice.call(f.querySelectorAll('fieldset.pg')),res=document.getElementById('res'),i=0;
+var bVoltar=document.getElementById('voltar'),bSeguir=document.getElementById('seguir'),erro=document.getElementById('erro'),navq=document.getElementById('navq');
+var pbar=document.getElementById('pbar'),ptxt=document.getElementById('ptxt'),prog=document.querySelector('.prog');
+f.addEventListener('change',function(){erro.textContent=''});
+function val(k){
+ if(k==='nome')return document.getElementById('nome').value.trim();
+ if(k==='gosto')return [].slice.call(f.querySelectorAll('input[name=gosto]:checked')).map(function(c){return c.value});
+ var r=f.querySelector('input[name='+k+']:checked');return r?r.value:'';
+}
+function show(n){
+ pgs.forEach(function(p,j){p.hidden=j!==n});
+ i=n;bVoltar.disabled=n===0;bSeguir.textContent=n===pgs.length-1?'Ver minha casa':'Continuar';
+ pbar.style.width=((n+1)/pgs.length*100)+'%';ptxt.textContent=(n+1)+' DE '+pgs.length;
+ var first=pgs[n].querySelector('input');if(first&&document.activeElement&&f.contains(document.activeElement))first.focus({preventScroll:true});
+}
+bSeguir.addEventListener('click',function(){
+ var k=pgs[i].getAttribute('data-k'),v=val(k);
+ if(k!=='nome'&&k!=='gosto'&&!v){erro.textContent='Escolha uma opção para continuar.';return}
+ if(i<pgs.length-1){show(i+1)}else{resultado()}
+});
+bVoltar.addEventListener('click',function(){if(i>0)show(i-1)});
+f.addEventListener('submit',function(e){e.preventDefault();bSeguir.click()});
+document.getElementById('refazer').addEventListener('click',function(){f.reset();res.hidden=true;navq.hidden=false;prog.hidden=false;show(0)});
+
+function resultado(){
+ var pe=parseInt(val('pessoas'),10),oc=val('ocasiao'),qd=val('quando'),cl=val('clima'),gs=val('gosto'),n=val('nome');
+ var casa=cl,obs=[];
+ if(CASAS[casa].cap<pe){
+  var ord=['Shanghai','Toscana','África','Bali','Marrocos'];
+  var alt=ord.filter(function(c){return CASAS[c].cap>=pe});
+  var pref={'Marrocos':'África','Bali':'Toscana','Toscana':'Shanghai','África':'Shanghai'}[cl];
+  casa=(pref&&CASAS[pref].cap>=pe)?pref:alt[0];
+  obs.push('A Casa '+cl+' recebe até '+CASAS[cl].cap+' pessoas. Para '+pe+', a sugestão é a Casa '+casa+', que tem uma atmosfera parecida com o que você escolheu.');
+ }
+ var c=CASAS[casa],p=[];
+ p.push(c.txt);
+ obs.forEach(function(o){p.push(o)});
+ var pac={'Fim de semana':'Pacote Final de Semana, de sexta a domingo, com 2 noites.','Meio de semana':'Pacote Domingo e Quarta Grátis, com 3 noites e condição especial no meio da semana.','Uma semana ou mais':'Pacote da Semana, com 6 noites, ou o Pacote de 10 dias, com 9 noites.','Natal':'Pacote Natal na serra, de 23 a 27 de dezembro, com decoração e cesta natalina.','Réveillon':'Pacote Réveillon na serra, de 30 de dezembro a 4 de janeiro.'}[qd];
+ p.push('Pacote indicado: '+pac+' A cesta de café da manhã vem incluída.');
+ if(gs.indexOf('Piscina, jacuzzi e sauna')>-1)p.push('Piscina com cascata, jacuzzi e sauna ficam nas áreas comuns, a poucos passos de todas as casas.');
+ if(gs.indexOf('Mirante e silêncio')>-1)p.push('O mirante tem vista aberta para a serra e é o melhor lugar da chácara no fim da tarde.');
+ if(gs.indexOf('Arte e ateliê')>-1)p.push('Peça para agendar a visita à Casa Ateliê. As galerias ao ar livre ficam no caminho entre as casas.');
+ if(gs.indexOf('Passeios na região')>-1)p.push('Os anfitriões têm um guia da região com fazendas de café especial, vinícolas e trilhas.');
+ document.getElementById('rtit').textContent=(n?n+', a sua é a ':'A sua é a ')+'Casa '+casa;
+ var im=document.getElementById('rimg');im.src=c.img;im.alt='Casa '+casa;
+ var box=document.getElementById('rplano');box.innerHTML='';p.forEach(function(t){var e=document.createElement('p');e.textContent=t;box.appendChild(e)});
+ document.getElementById('rresumo').textContent='As datas e o valor são confirmados pelos anfitriões no WhatsApp.';
+ var msg='Olá! '+(n?'Meu nome é '+n+'. ':'')+'Fiz o questionário no site da Gloc Villa:\n\nCasa indicada: Casa '+casa+'\nPessoas: '+pe+'\nOcasião: '+oc+'\nQuando: '+qd+(gs.length?'\nNão pode faltar: '+gs.join(', '):'')+'\n\nGostaria de saber as datas disponíveis e o valor.';
+ document.getElementById('enviar').href=wa(msg);
+ pgs.forEach(function(pg){pg.hidden=true});navq.hidden=true;erro.textContent='';prog.hidden=true;res.hidden=false;res.focus({preventScroll:true});
+ res.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});
+}
+})();
+</script>
+</body>
+</html>
